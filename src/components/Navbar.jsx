@@ -33,7 +33,7 @@ function NavBar() {
         <Navbar.Brand href="/">
           <span className="logo display-5">NICO</span>
           <br />
-          <span className="logo2 fs-3">Web Developer</span>
+          <span className="logo2 fs-3">Web Developer Jr</span>
           {/* <img className="logo" src={logo} alt="Logo"/> */}
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav">
