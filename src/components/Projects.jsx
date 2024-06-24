@@ -1,103 +1,3 @@
-// import React from "react";
-// import Tab from "react-bootstrap/Tab";
-// import Tabs from "react-bootstrap/Tabs";
-// import { Container, Row, Col } from "react-bootstrap";
-// import colorSharp2 from "../assets/img/color-sharp2.png";
-// import ProjectCard from "../components/ProjectCard";
-// import "animate.css";
-// import TrackVisibility from "react-on-screen";
-
-// function Projects() {
-//   const projects = [
-//     {
-//       title: "Business Startup",
-//       description: "Design and development",
-//       imgUrl: "projImg1",
-//     },
-//     {
-//       title: "Business Startup",
-//       description: "Design and development",
-//       imgUrl: "projImg2",
-//     },
-//     {
-//       title: "Business Startup",
-//       description: "Design and development",
-//       imgUrl: "projImg3",
-//     },
-//     {
-//       title: "Business Startup",
-//       description: "Design and development",
-//       imgUrl: "projImg4",
-//     },
-//     {
-//       title: "Business Startup",
-//       description: "Design and development",
-//       imgUrl: "projImg5",
-//     },
-//     {
-//       title: "Business Startup",
-//       description: "Design and development",
-//       imgUrl: "projImg6",
-//     },
-//   ];
-
-//   return (
-//     <section className="project" id="project">
-//       <Container>
-//         <Row>
-//           <Col size={12}>
-//             <TrackVisibility>
-//               {({ isVisible }) => (
-//                 <div
-//                   className={
-//                     isVisible ? "animate__animated animate__fadeIn" : ""
-//                   }
-//                 >
-//                   <h2>Progetti</h2>
-//                   <p>
-//                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
-//                     Repudiandae nam commodi expedita quisquam dignissimos, at
-//                     aspernatur quidem, culpa doloremque a nulla eum soluta odit
-//                     tempora quis consectetur, corrupti numquam accusamus!
-//                   </p>
-//                   <Tabs
-//                     defaultActiveKey="first"
-//                     id="projects-tabs"
-//                     className="mb-3 Tabs"
-//                     justify
-//                   >
-//                     <Tab
-//                       id="slideInUp"
-//                       className={
-//                         isVisible ? "animate__animated animate__slideInUp" : ""
-//                       }
-//                       eventKey="first"
-//                       title="Page 1"
-//                     >
-//                       <Row>
-//                         {projects.map((project, index) => {
-//                           return <ProjectCard key={index} {...project} />;
-//                         })}
-//                       </Row>
-//                     </Tab>
-//                     <Tab eventKey="second" title="Page 2"></Tab>
-//                     <Tab eventKey="third" title="Page 3"></Tab>
-//                   </Tabs>
-//                 </div>
-//               )}
-//             </TrackVisibility>
-//           </Col>
-//         </Row>
-//       </Container>
-//       <img className="bg-img-right" src={colorSharp2} alt="" />
-//     </section>
-//   );
-// }
-
-// export default Projects;
-
-
-
 import { Container, Row, Col, Tab, Nav } from "react-bootstrap";
 import ProjectCard from "../components/ProjectCard";
 import projImg1 from "../assets/img/ScreenshotPrestoHome.png";
@@ -164,7 +64,7 @@ function Projects (){
                       <Nav.Link eventKey="third">Page 3</Nav.Link>
                     </Nav.Item>
                   </Nav>
-                  <Tab.Content id="slideInUp" className={isVisible ? "animate__animated animate__slideInUp" : ""}>
+                  <Tab.Content id="slideInUp" className={isVisible ? "animate__animated animate__fadeIn" : ""}>
                     <Tab.Pane eventKey="first">
                       <Row>
                         {
