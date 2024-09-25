@@ -9,9 +9,9 @@ function Banner() {
   const [loopNum, setLoopNum] = useState(0);
   const [isDeleting, setIsDeleting] = useState(false);
   const toRotate = [
-    "Im Web Developer Junior",
-    "Im Front - End Developer",
-    "Im Design Lover!",
+    "Web Developer Junior",
+    "Front - End Developer",
+    "Design Lover!",
   ];
   const [text, setText] = useState("");
   const [delta, setDelta] = useState(200 - Math.random() * 200);
@@ -65,7 +65,7 @@ function Banner() {
                 <span className="tagline">Welcome to my Portfolio</span>
                 <h1>
                   Hi! Im Nicolò <hr className="w-100" />
-                  <span className="wrap">{text}</span>
+                  <span className="wrap">Im {text}</span>
                 </h1>
                 <p>
                   Born in Verona, Veneto, IT. <br /> I am passionate about

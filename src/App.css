@@ -95,7 +95,7 @@ span.logo2{
   border-top: solid white 1px;
 }
 nav.navbar {
-  padding: 18px 0;
+  padding: 20px 0;
   position: fixed;
   width: 100%;
   top: 0;
@@ -103,7 +103,7 @@ nav.navbar {
   transition:  0.32s ease-in-out;
 }
 nav.navbar.scrolled {
-  padding: 0px 0;
+  padding: 10px 0;
   background-color: #121212;
 }
 nav.navbar a.navbar-brand {
@@ -121,6 +121,25 @@ nav.navbar .navbar-nav a.nav-link.navbar-link:hover,
 nav.navbar .navbar-nav a.nav-link.navbar-link.active {
     opacity: 1;
 }
+
+.scroll-watcher{
+  height: 10px;
+  position: fixed;
+  top: 0;
+  z-index: 999;
+  background: linear-gradient(0.25turn, #9a009a, #3a0ad7);
+  width: 100%;
+  scale: 0 1;
+  opacity: 80%;
+  /* transform-origin: left; */
+
+  animation: scroll-watcher linear;
+  animation-timeline: scroll(y);
+}
+@keyframes scroll-watcher{
+  to {scale: 1 1;}
+}
+
 span.navbar-text {
     display: flex;
     align-items: center;
@@ -565,7 +584,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
 /************ Footer Css ************/
 .footer{
-  padding: 0 0 50px 0;
+  padding: 50px 0 50px 0;
   background-image: url('./assets/img/footer-bg.png');
   background-position: center center;
   background-size: cover;
@@ -586,3 +605,6 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   letter-spacing: 0.5px;
   margin-top: 20px;
 }
+
+
+

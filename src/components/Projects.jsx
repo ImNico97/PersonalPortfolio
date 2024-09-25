@@ -64,7 +64,7 @@ function Projects (){
                       <Nav.Link eventKey="third">Page 3</Nav.Link>
                     </Nav.Item>
                   </Nav>
-                  <Tab.Content id="slideInUp" className={isVisible ? "animate__animated animate__fadeIn" : ""}>
+                  <Tab.Content id="slideInUp">
                     <Tab.Pane eventKey="first">
                       <Row>
                         {

@@ -87,6 +87,7 @@ function NavBar() {
           </span>
         </Navbar.Collapse>
       </Container>
+      <div  className="scroll-watcher"></div>
     </Navbar>
   );
 }
