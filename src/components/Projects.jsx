@@ -1,8 +1,8 @@
 import { Container, Row, Col, Tab, Nav } from "react-bootstrap";
 import ProjectCard from "../components/ProjectCard";
 import projImg1 from "../assets/img/ScreenshotPrestoHome.png";
-// import projImg2 from "../assets/img/project-img2.png";
-// import projImg3 from "../assets/img/project-img3.png";
+import projImg2 from "../assets/img/ScreenshotPP.png";
+import projImg3 from "../assets/img/ScreenshotBuildingCompany.png";
 import colorSharp2 from "../assets/img/color-sharp2.png";
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
@@ -11,35 +11,35 @@ function Projects (){
 
   const projects = [
     {
-      title: "Business Startup",
-      description: "Design & Development",
+      title: "Presto Project",
+      description: "Buy & Sell",
       imgUrl: projImg1,
     },
     {
-      title: "Business Startup",
-      description: "Design & Development",
-      imgUrl: projImg1,
+      title: "Personal Portfolio",
+      description: "This Website!",
+      imgUrl: projImg2,
     },
     {
-      title: "Business Startup",
-      description: "Design & Development",
-      imgUrl: projImg1,
+      title: "Building Project",
+      description: "Construction Company Website",
+      imgUrl: projImg3,
     },
-    {
-      title: "Business Startup",
-      description: "Design & Development",
-      imgUrl: projImg1,
-    },
-    {
-      title: "Business Startup",
-      description: "Design & Development",
-      imgUrl: projImg1,
-    },
-    {
-      title: "Business Startup",
-      description: "Design & Development",
-      imgUrl: projImg1,
-    },
+    // {
+    //   title: "Business Startup",
+    //   description: "Design & Development",
+    //   imgUrl: projImg1,
+    // },
+    // {
+    //   title: "Business Startup",
+    //   description: "Design & Development",
+    //   imgUrl: projImg1,
+    // },
+    // {
+    //   title: "Business Startup",
+    //   description: "Design & Development",
+    //   imgUrl: projImg1,
+    // },
   ];
 
   return (

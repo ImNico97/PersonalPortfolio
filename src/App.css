@@ -266,7 +266,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .banner {
   margin-top: 0;
   padding: 260px 0 100px 0;
-  background-image: url('./assets/img/banner-bg.png');
+  background-image: linear-gradient(to bottom, #ffffff00 80%, #121212 100%), url('./assets/img/banner-bg.png');
   background-position: top center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -275,7 +275,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   font-weight: 700;
   letter-spacing: 0.8px;
   padding: 8px 10px;
-  background: linear-gradient(90.21deg, rgba(170, 54, 124, 0.5) -5.91%, rgba(74, 47, 189, 0.5) 80%);
+  background: linear-gradient(90.21deg, rgba(170, 54, 124, 0.5) -5.91%, rgba(73, 47, 189, 0.484) 80%);
   border: 1px solid rgba(255, 255, 255, 0.5);
   font-size: 20px;
   margin-bottom: 16px;
@@ -335,6 +335,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
 /************ Skills Css ************/
 .skill {
+  background-color: #ffffff00;
   padding: 0 0 50px 0;
   position: relative;
 }
@@ -350,7 +351,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 	font-weight: 700;
 }
 .skill p {
-    color: #B8B8B8;
+    color: #b0b0b0;
     font-size: 18px;
     letter-spacing: 0.8px;
     line-height: 1.5em;
@@ -449,8 +450,9 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   border-radius: 0 55px 55px 0;
 }
 .proj-imgbx {
-  height: 100%;
+  /* height: 100%; */
   position: relative;
+  border: 1px solid rgba(255, 255, 255, 0.5);  
   border-radius: 30px;
   overflow: hidden;
   margin-bottom: 24px;
@@ -459,7 +461,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 .proj-imgbx::before {
   content: "";
-  background: linear-gradient(90.21deg, #AA367C -5.91%, #4A2FBD 111.58%);
+  background: linear-gradient(90.21deg, #aa367c -5.91%, #4A2FBD 111.58%);
   opacity: 0.85;
   position: absolute;
   width: 100%;
@@ -468,7 +470,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   border-radius: 25px;
 }
 .proj-imgbx:hover::before {
-  height: 90%;
+  height: 100%;
 }
 .proj-txt {
   position: absolute;

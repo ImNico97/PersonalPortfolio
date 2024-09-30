@@ -72,7 +72,7 @@ function Banner() {
                   front-end development and aim for intuitive projects with the
                   best user experience.
                 </p>
-                <button>
+                <button className="mb-5">
                   Contact Me<ArrowRightCircle size={25}></ArrowRightCircle>
                 </button>
               </div>}
