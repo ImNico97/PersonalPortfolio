@@ -5,7 +5,7 @@ import navIcon3 from "../assets/img/nav-icon3.svg";
 
 function Footer() {
   return (
-    <footer className="footer">
+    <footer className="footer" >
       <Container>
         <Row className="align-item-center">
           <Col sm={6}>

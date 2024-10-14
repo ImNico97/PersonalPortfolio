@@ -6,12 +6,15 @@ import "animate.css";
 import TrackVisibility from "react-on-screen";
 
 function Banner() {
+
+  const [hasAnimated, setHasAnimated] = useState(false);
+
   const [loopNum, setLoopNum] = useState(0);
   const [isDeleting, setIsDeleting] = useState(false);
   const toRotate = [
-    "Web Developer Junior",
-    "Front - End Developer",
-    "Design Lover!",
+    "Im Web Developer Junior",
+    "Im Front - End Developer",
+    "Im Design Lover!",
   ];
   const [text, setText] = useState("");
   const [delta, setDelta] = useState(200 - Math.random() * 200);
@@ -37,7 +40,9 @@ function Banner() {
     setText(updatedText);
 
     if (isDeleting) {
-      setDelta((prevDelta) => prevDelta / 2);
+      setDelta(55);
+    }else{
+      setDelta(150)
     }
 
     if (!isDeleting && updatedText === fullText) {
@@ -46,36 +51,45 @@ function Banner() {
     } else if (isDeleting && updatedText === "") {
       setIsDeleting(false);
       setLoopNum(loopNum + 1);
-      setDelta(400);
+      setDelta(200);
     }
   }
 
   return (
-    <section className="banner" id="home">
+    <section className="banner" id="home" href="/">
       <Container>
         <Row className="align-items-center">
           <Col xs={12} md={6} xl={8}>
             <TrackVisibility>
-            {({isVisible}) =>
+            {({isVisible}) =>  {
+                // Esegui l'animazione solo la prima volta
+                if (isVisible && !hasAnimated) {
+                  setHasAnimated(true);
+                }
+                return (
               <div
                 className={
-                  isVisible ? "animate__animated animate__fadeIn" : ""
+                  hasAnimated ? "animate__animated animate__fadeIn animate_slower" : "invisible"
                 }
               >
                 <span className="tagline">Welcome to my Portfolio</span>
                 <h1>
                   Hi! Im Nicolò <hr className="w-100" />
-                  <span className="wrap">Im {text}</span>
+                  <span className="wrap">{text}</span>
                 </h1>
                 <p>
                   Born in Verona, Veneto, IT. <br /> I am passionate about
                   front-end development and aim for intuitive projects with the
                   best user experience.
                 </p>
-                <button className="mb-5">
+                <a href="#connect" className="connect">
+                <button className="mb-5" id="skills">
                   Contact Me<ArrowRightCircle size={25}></ArrowRightCircle>
                 </button>
-              </div>}
+                </a>
+              </div>)
+              }
+            }
             </TrackVisibility>
           </Col>
           <Col xs={12} md={6} xl={4}>
